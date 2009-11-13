@@ -1,0 +1,589 @@
+<filter-list>
+	<filter-group>
+		<document-name>com.sun.star.text.TextDocument</document-name>
+		<filters>
+			<filter>
+				<localized-name>OpenDocument Text</localized-name>
+				<api-name>writer8</api-name>
+				<file-extension>odt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenDocument Text Template</localized-name>
+				<api-name>writer8_template</api-name>
+				<file-extension>ott</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Text Document</localized-name>
+				<api-name>StarOffice XML (Writer)</api-name>
+				<file-extension>sxw</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Text Document Template</localized-name>
+				<api-name>writer_StarOffice_XML_Writer_Template</api-name>
+				<file-extension>stw</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>Microsoft Word 97/2000/XP</localized-name>
+				<api-name>MS Word 97</api-name>
+				<file-extension>doc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>Microsoft Word 95</localized-name>
+				<api-name>MS Word 95</api-name>
+				<file-extension>doc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>Microsoft Word 6.0</localized-name>
+				<api-name>MS WinWord 6.0</api-name>
+				<file-extension>doc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>Rich Text Format</localized-name>
+				<api-name>Rich Text Format</api-name>
+				<file-extension>rtf</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarWriter 5.0</localized-name>
+				<api-name>StarWriter 5.0</api-name>
+				<file-extension>sdw</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarWriter 5.0 Template</localized-name>
+				<api-name>StarWriter 5.0 Vorlage/Template</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarWriter 4.0</localized-name>
+				<api-name>StarWriter 4.0</api-name>
+				<file-extension>sdw</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+						
+			<filter>
+				<localized-name>StarWriter 4.0 Template</localized-name>
+				<api-name>StarWriter 4.0 Vorlage/Template</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+						
+			<filter>
+				<localized-name>StarWriter 3.0</localized-name>
+				<api-name>StarWriter 3.0</api-name>
+				<file-extension>sdw</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarWriter 3.0 Template</localized-name>
+				<api-name>StarWriter 3.0 Vorlage/Template</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Text</localized-name>
+				<api-name>Text</api-name>
+				<file-extension>txt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Text Encoded</localized-name>
+				<api-name>Text (encoded)</api-name>
+				<file-extension>txt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>HTML Document (OpenOffice.org Writer)</localized-name>
+				<api-name>HTML (StarWriter)</api-name>
+				<file-extension>html</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>AportisDoc (Palm)</localized-name>
+				<api-name>AportisDoc Palm DB</api-name>
+				<file-extension>pdb</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>DocBook</localized-name>
+				<api-name>DocBook File</api-name>
+				<file-extension>xml</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Microsoft Word 2003 XML</localized-name>
+				<api-name>MS Word 2003 XML</api-name>
+				<file-extension>xml</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>Pocket Word</localized-name>
+				<api-name>PocketWord File</api-name>
+				<file-extension>psw</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+															
+		</filters>
+	</filter-group>
+
+	<filter-group>
+		<document-name>com.sun.star.sheet.SpreadsheetDocument</document-name>
+		<filters>
+			
+			<filter>
+				<localized-name>OpenDocument Spreadsheet</localized-name>
+				<api-name>calc8</api-name>
+				<file-extension>ods</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenDocument Spreadsheet Template</localized-name>
+				<api-name>calc8_template</api-name>
+				<file-extension>ots</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+						
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Spreadsheet</localized-name>
+				<api-name>StarOffice XML (Calc)</api-name>
+				<file-extension>sxc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Spreadsheet Template</localized-name>
+				<api-name>calc_StarOffice_XML_Calc_Template</api-name>
+				<file-extension>stc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>Data Interchange Format</localized-name>
+				<api-name>DIF</api-name>
+				<file-extension>dif</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>dBASE</localized-name>
+				<api-name>dBase</api-name>
+				<file-extension>dbf</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>Microsoft Excel 97/2000/XP</localized-name>
+				<api-name>MS Excel 97</api-name>
+				<file-extension>xls</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Microsoft Excel 97/2000/XP Template</localized-name>
+				<api-name>MS Excel 97 Vorlage/Template</api-name>
+				<file-extension>xlt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>			
+
+			<filter>
+				<localized-name>Microsoft Excel 95</localized-name>
+				<api-name>MS Excel 95</api-name>
+				<file-extension>xls</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Microsoft Excel 95 Template</localized-name>
+				<api-name>MS Excel 95 Vorlage/Template</api-name>
+				<file-extension>xlt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Microsoft Excel 5.0</localized-name>
+				<api-name>MS Excel 5.0/95</api-name>
+				<file-extension>xls</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+									
+			<filter>
+				<localized-name>Microsoft Excel 5.0 Template</localized-name>
+				<api-name>MS Excel 5.0/95 Vorlage/Template</api-name>
+				<file-extension>xlt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarCalc 5.0</localized-name>
+				<api-name>StarCalc 5.0</api-name>
+				<file-extension>sdc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarCalc 5.0 Template</localized-name>
+				<api-name>StarCalc 5.0 Vorlage/Template</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarCalc 4.0</localized-name>
+				<api-name>StarCalc 4.0</api-name>
+				<file-extension>sdc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarCalc 4.0 Template</localized-name>
+				<api-name>StarCalc 4.0 Vorlage/Template</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarCalc 3.0</localized-name>
+				<api-name>StarCalc 3.0</api-name>
+				<file-extension>sdc</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarCalc 3.0 Template</localized-name>
+				<api-name>StarCalc 3.0 Vorlage/Template</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>SYLK</localized-name>
+				<api-name>SYLK</api-name>
+				<file-extension>slk</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Text CSV</localized-name>
+				<api-name>Text - txt - csv (StarCalc)</api-name>
+				<file-extension>csv</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>HTML Document (OpenOffice.org Calc)</localized-name>
+				<api-name>HTML (StarCalc)</api-name>
+				<file-extension>html</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Microsoft Excel 2003 XML</localized-name>
+				<api-name>MS Excel 2003 XML</api-name>
+				<file-extension>xml</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Pocket Excel</localized-name>
+				<api-name>Pocket Excel</api-name>
+				<file-extension>pxl</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+									
+		</filters>
+	</filter-group>
+		
+	
+	<filter-group>
+		<document-name>com.sun.star.drawing.DrawingDocument</document-name>
+		<filters>
+
+			<filter>
+				<localized-name>OpenDocument Drawing</localized-name>
+				<api-name>draw8</api-name>
+				<file-extension>odg</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenDocument Drawing Template</localized-name>
+				<api-name>draw8_template</api-name>
+				<file-extension>otg</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Drawing</localized-name>
+				<api-name>StarOffice XML (Draw)</api-name>
+				<file-extension>sxd</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Drawing Template</localized-name>
+				<api-name>draw_StarOffice_XML_Draw_Template</api-name>
+				<file-extension>std</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarDraw 5.0</localized-name>
+				<api-name>StarDraw 5.0</api-name>
+				<file-extension>sda</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarDraw 5.0 Template</localized-name>
+				<api-name>StarDraw 5.0 Vorlage</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarDraw 3.0</localized-name>
+				<api-name>StarDraw 3.0</api-name>
+				<file-extension>sdd</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+									
+			<filter>
+				<localized-name>StarDraw 3.0 Template</localized-name>
+				<api-name>StarDraw 3.0 Vorlage</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+		</filters>
+	</filter-group>
+
+	<filter-group>
+		<document-name>com.sun.star.presentation.PresentationDocument</document-name>
+		<filters>
+
+			<filter>
+				<localized-name>OpenDocument Presentation</localized-name>
+				<api-name>impress8</api-name>
+				<file-extension>odp</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenDocument Presentation Template</localized-name>
+				<api-name>impress8_template</api-name>
+				<file-extension>otp</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Presentation</localized-name>
+				<api-name>StarOffice XML (Impress)</api-name>
+				<file-extension>sxi</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Presentation Template</localized-name>
+				<api-name>impress_StarOffice_XML_Impress_Template</api-name>
+				<file-extension>sti</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Microsoft PowerPoint 97/2000/XP</localized-name>
+				<api-name>MS PowerPoint 97</api-name>
+				<file-extension>ppt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Microsoft PowerPoint 97/2000/XP Template</localized-name>
+				<api-name>MS PowerPoint 97 Vorlage</api-name>
+				<file-extension>pot</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Drawing (OpenOffice.org Impress)</localized-name>
+				<api-name>impress_StarOffice_XML_Draw</api-name>
+				<file-extension>sxd</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarDraw 5.0 (OpenOffice.org Impress)</localized-name>
+				<api-name>StarDraw 5.0 (StarImpress)</api-name>
+				<file-extension>sda</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarDraw 3.0 (OpenOffice.org Impress)</localized-name>
+				<api-name>StarDraw 3.0 (StarImpress)</api-name>
+				<file-extension>sdd</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarImpress 5.0</localized-name>
+				<api-name>StarImpress 5.0</api-name>
+				<file-extension>sdd</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarImpress 5.0 Template</localized-name>
+				<api-name>StarImpress 5.0 Vorlage</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarImpress 4.0</localized-name>
+				<api-name>StarImpress 4.0</api-name>
+				<file-extension>sdd</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarImpress 4.0 Template</localized-name>
+				<api-name>StarImpress 4.0 Vorlage</api-name>
+				<file-extension>vor</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>OpenDocument Drawing (Impress)</localized-name>
+				<api-name>impress8_draw</api-name>
+				<file-extension>odg</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>						
+						
+		</filters>
+	</filter-group>	
+		
+	<filter-group>
+		<document-name>com.sun.star.text.WebDocument</document-name>
+		<filters>
+			<filter>
+				<localized-name>HTML Document</localized-name>
+				<api-name>HTML</api-name>
+				<file-extension>html</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			<filter>
+				<localized-name>PDF - Portable Document Format</localized-name>
+				<api-name>writer_web_pdf_Export</api-name>
+				<file-extension>pdf</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+		</filters>
+	</filter-group>
+
+	
+	<filter-group>
+		<document-name>com.sun.star.formula.FormulaProperties</document-name>
+		<filters>
+			
+			<filter>
+				<localized-name>OpenDocument Formula</localized-name>
+				<api-name>math8</api-name>
+				<file-extension>odf</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Formula</localized-name>
+				<api-name>StarOffice XML (Math)</api-name>
+				<file-extension>sxm</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>StarMath 5.0</localized-name>
+				<api-name>StarMath 5.0</api-name>
+				<file-extension>smf</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>MathML 1.01</localized-name>
+				<api-name>MathML XML (Math)</api-name>
+				<file-extension>mml</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+						
+		</filters>
+	</filter-group>
+	
+	
+	<filter-group>
+		<document-name>com.sun.star.text.GlobalDocument</document-name>
+		<filters>
+			
+			<filter>
+				<localized-name>OpenDocument Master Document</localized-name>
+				<api-name>writerglobal8</api-name>
+				<file-extension>odm</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+
+			<filter>
+				<localized-name>OpenOffice.org 1.0 Master Document</localized-name>
+				<api-name>writer_globaldocument_StarOffice_XML_Writer_GlobalDocument</api-name>
+				<file-extension>sxg</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarWriter 5.0 Master Document</localized-name>
+				<api-name>StarWriter 5.0/GlobalDocument</api-name>
+				<file-extension>sgl</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>StarWriter 4.0 Master Document</localized-name>
+				<api-name>StarWriter 4.0/GlobalDocument</api-name>
+				<file-extension>sgl</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+			<filter>
+				<localized-name>Text Encoded (OpenOffice.org Master Document)</localized-name>
+				<api-name>Text (encoded) (StarWriter/GlobalDocument)</api-name>
+				<file-extension>txt</file-extension>
+				<mime-type>application/octet-stream</mime-type>
+			</filter>
+			
+		</filters>
+	</filter-group>
+		
+</filter-list>

@@ -1,0 +1,65 @@
+<assembly>
+   <id>binary</id>
+   <formats>
+      <format>zip</format>
+   </formats>
+   <includeBaseDirectory>false</includeBaseDirectory>
+
+   <fileSets>
+      <fileSet>
+         <directory>src/main/addon</directory>
+         <outputDirectory>/</outputDirectory>
+      </fileSet>
+   </fileSets>
+
+   <dependencySets>
+      <dependencySet>
+         <outputDirectory>/</outputDirectory>
+         <unpack>false</unpack>
+         <scope>runtime</scope>
+         <excludes>
+            <exclude>
+               commons-collections:commons-collections
+				</exclude>
+            <exclude>javax.transaction:jta</exclude>
+            <exclude>commons-lang:commons-lang</exclude>
+            <exclude>bcel:bcel</exclude>
+            <exclude>mail:mail</exclude>
+            <exclude>jsf:jsf-api</exclude>
+            <exclude>jibx:jibx-bind</exclude>
+            <exclude>javax.portlet:portlet-api</exclude>
+            <exclude>drools:drools-java</exclude>
+            <exclude>drools:drools-core</exclude>
+            <exclude>quartz:quartz</exclude>
+            <exclude>exo-platform:exo-platform.container</exclude>
+            <exclude>mail:activation</exclude>
+            <exclude>picocontainer:picocontainer</exclude>
+            <exclude>mysql:mysql-connector-java</exclude>
+            <exclude>groovy:groovy-all-1.0-jsr</exclude>
+            <exclude>xpp3:xpp3</exclude>
+            <exclude>exo-platform:exo-platform.commons</exclude>
+            <exclude>jibx:jibx-run</exclude>
+            <exclude>drools:drools-base</exclude>
+            <exclude>drools:drools-smf</exclude>
+            <exclude>javax.servlet:servlet-api</exclude>
+            <exclude>janino:janino</exclude>
+            <exclude>antlr:antlr</exclude>
+            <exclude>xstream:xstream</exclude>
+            <exclude>junit:junit</exclude>
+            <exclude>drools:drools-smftest</exclude>
+            <exclude>exo-platform:exo-platform.test.framework</exclude>
+            <exclude>jmock:jmock</exclude>
+            <exclude>commons-beanutils:commons-beanutils</exclude>
+            <exclude>xerces:xercesImpl</exclude>
+            <exclude>com.sun.star:beans</exclude>
+            <exclude>com.sun.star:unoil</exclude>
+            <exclude>com.sun.star:comp</exclude>
+            <exclude>org.exoplatform.kernel:exo.kernel.container</exclude>
+
+            <exclude>org.exoplatform.tool:exo.tool.framework.junit</exclude>
+            <exclude>javax.portlet:portlet-api</exclude>
+            <exclude>javax.faces:jsf-api</exclude>
+         </excludes>
+      </dependencySet>
+   </dependencySets>
+</assembly>

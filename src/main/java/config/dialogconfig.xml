@@ -1,0 +1,1024 @@
+<dialogconfig>
+	
+	<dialog>
+		<name>_OpenDialog</name>
+
+		<properties>
+				<property name="Width" type="integer" value="393" />
+				<property name="Height" type="integer" value="214" />
+				<property name="Title" type="string" value="Open Remote Document" />
+		</properties>				
+				
+		<components>
+			
+			<!-- BROWSE COMPONENTS -->
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnPrev"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="5" />
+				<property name="Width" type="integer" value="14" />
+				<property name="Height" type="integer" value="16" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="" />
+				<property name="ImageURL" type="image" value="go-up.png" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlComboBoxModel</class>
+				<property name="Name" type="string" value="comboPath"/>				
+				<property name="PositionX" type="integer" value="21" />
+				<property name="PositionY" type="integer" value="6" />
+				<property name="Width" type="integer" value="366" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="1" />				
+				<property name="Dropdown" type="boolean" value="true" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHeadBack"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="381" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="" />
+				<!-- property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" / -->
+				<property name="BackgroundColor" type="integer" value="10397395" />
+				<property name="Border" type="short" value="1" />
+			</component>			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHead"/>
+				<property name="PositionX" type="integer" value="7" />
+				<property name="PositionY" type="integer" value="25" />
+				<property name="Width" type="integer" value="379" />
+				<property name="Height" type="integer" value="8" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="* Name" />
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" />
+				<property name="BackgroundColor" type="integer" value="10397395" />
+			</component>			
+						
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlImageControlModel</class>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="331" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Name" type="string" value="imgLogo"/>				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="ImageURL" type="image" value="tableheader.png" />
+			</component -->
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnIsVersioned"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="10" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" *" />
+			</component -->			
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnFileName"/>
+				<property name="PositionX" type="integer" value="15" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="81" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Name" />
+			</component -->
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnSize"/>
+				<property name="PositionX" type="integer" value="95" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="45" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Size" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnLastModified"/>
+				<property name="PositionX" type="integer" value="139" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="105" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Last Modified" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnComments"/>
+				<property name="PositionX" type="integer" value="243" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="94" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Comments" />
+			</component -->
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlListBoxModel</class>
+				<property name="Name" type="string" value="lstItems"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="35" />
+				<property name="Width" type="integer" value="381" />
+				<property name="Height" type="integer" value="155" />				
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22" />
+				<property name="TabIndex" type="short" value="3" />
+			</component>
+
+			
+			<!-- END -->			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnVersions"/>
+				<property name="PositionX" type="integer" value="5" />
+				<property name="PositionY" type="integer" value="194" />
+				<property name="Width" type="integer" value="70" />
+				<property name="Height" type="integer" value="14" />
+				<property name="Align" type="short" value="1" />
+				<property name="TabIndex" type="short" value="4" />
+				<property name="Label" type="string" value="View versions" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnOpen"/>
+				<property name="PositionX" type="integer" value="301" />
+				<property name="PositionY" type="integer" value="194" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />
+				<property name="Align" type="short" value="1" />
+				<property name="TabIndex" type="short" value="4" />
+				<property name="Label" type="string" value="Open" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnCancel"/>
+				<property name="PositionX" type="integer" value="345" />
+				<property name="PositionY" type="integer" value="194" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />				
+				<property name="TabIndex" type="short" value="5" />
+				<property name="PushButtonType" type="short" value="2" />
+				<property name="Label" type="string" value="Cancel" />
+			</component>
+									
+		</components>
+		
+	</dialog>
+
+
+	<dialog>
+		<name>_SaveDialog</name>
+
+		<properties>
+				<property name="Width" type="integer" value="393" />
+				<property name="Height" type="integer" value="234" />
+				<property name="Title" type="string" value="Save Document" />
+		</properties>				
+				
+		<components>
+
+			<!-- BROWSE COMPONENTS -->
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnPrev"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="5" />
+				<property name="Width" type="integer" value="14" />
+				<property name="Height" type="integer" value="16" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="" />
+				<property name="ImageURL" type="image" value="go-up.png" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlComboBoxModel</class>
+				<property name="Name" type="string" value="comboPath"/>				
+				<property name="PositionX" type="integer" value="21" />
+				<property name="PositionY" type="integer" value="6" />
+				<property name="Width" type="integer" value="366" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="1" />				
+				<property name="Dropdown" type="boolean" value="true" />
+			</component>
+
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnIsVersioned"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="10" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" *" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnFileName"/>
+				<property name="PositionX" type="integer" value="15" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="81" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Name" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnSize"/>
+				<property name="PositionX" type="integer" value="95" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="45" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Size" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnLastModified"/>
+				<property name="PositionX" type="integer" value="139" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="105" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Last Modified" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnComments"/>
+				<property name="PositionX" type="integer" value="243" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="94" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Comments" />
+			</component -->
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlImageControlModel</class>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="331" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Name" type="string" value="imgLogo"/>				
+				<property name="TabIndex" type="short" value="6" />
+				<property name="ImageURL" type="image" value="tableheader.png" />
+			</component -->			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHeadBack"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="381" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="" />
+				<!-- property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" / -->
+				<property name="BackgroundColor" type="integer" value="10397395" />
+				<property name="Border" type="short" value="1" />
+			</component>			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHead"/>
+				<property name="PositionX" type="integer" value="7" />
+				<property name="PositionY" type="integer" value="25" />
+				<property name="Width" type="integer" value="379" />
+				<property name="Height" type="integer" value="8" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="* Name" />
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" />
+				<property name="BackgroundColor" type="integer" value="10397395" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlListBoxModel</class>
+				<property name="Name" type="string" value="lstItems"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="35" />
+				<property name="Width" type="integer" value="381" />
+				<property name="Height" type="integer" value="155" />				
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22" />
+				<property name="TabIndex" type="short" value="3" />
+			</component>
+
+			<!-- END -->			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnSave"/>
+				<property name="PositionX" type="integer" value="301" />
+				<property name="PositionY" type="integer" value="214" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />
+				<property name="Align" type="short" value="1" />
+				<property name="TabIndex" type="short" value="4" />
+				<property name="Label" type="string" value="Save" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnCancel"/>
+				<property name="PositionX" type="integer" value="345" />
+				<property name="PositionY" type="integer" value="214" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />				
+				<property name="TabIndex" type="short" value="5" />
+				<property name="PushButtonType" type="short" value="2" />
+				<property name="Label" type="string" value="Cancel" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="labelName"/>				
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="196" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="15" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />				
+				<property name="Label" type="string" value="File Name:" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlComboBoxModel</class>
+				<property name="Name" type="string" value="edtName"/>				
+				<property name="PositionX" type="integer" value="34" />
+				<property name="PositionY" type="integer" value="194" />
+				<property name="Width" type="integer" value="150" />
+				<property name="Height" type="integer" value="13" />
+				<property name="TabIndex" type="short" value="98" />				
+				<property name="Dropdown" type="boolean" value="false" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="labelType"/>				
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="216" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="15" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />				
+				<property name="Label" type="string" value="File Type:" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlComboBoxModel</class>
+				<property name="Name" type="string" value="edtType"/>				
+				<property name="PositionX" type="integer" value="34" />
+				<property name="PositionY" type="integer" value="214" />
+				<property name="Width" type="integer" value="150" />
+				<property name="Height" type="integer" value="13" />
+				<property name="TabIndex" type="short" value="98" />				
+				<property name="Dropdown" type="boolean" value="true" />
+			</component>
+															
+		</components>
+		
+	</dialog>
+	
+	<dialog>
+		<name>_SearchDialog</name>
+		
+		<properties>
+				<property name="Width" type="integer" value="393" />
+				<property name="Height" type="integer" value="214" />
+				<property name="Title" type="string" value="Search" />
+		</properties>				
+
+		<components>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="labelText"/>				
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="7" />
+				<property name="Width" type="integer" value="20" />
+				<property name="Height" type="integer" value="15" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />				
+				<property name="Label" type="string" value="Text:" />
+			</component>			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtText"/>				
+				<property name="PositionX" type="integer" value="25" />
+				<property name="PositionY" type="integer" value="5" />
+				<property name="Width" type="integer" value="310" />
+				<property name="Height" type="integer" value="13" />
+				<property name="TabIndex" type="short" value="98" />				
+				<property name="Align" type="short" value="0" />				
+				<property name="MultiLine" type="boolean" value="false" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnSearch"/>
+				<property name="PositionX" type="integer" value="345" />
+				<property name="PositionY" type="integer" value="4" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />				
+				<property name="TabIndex" type="short" value="5" />
+				<property name="Label" type="string" value="Search" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHeadBack"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="23" />
+				<property name="Width" type="integer" value="381" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="" />
+				<!-- property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" / -->
+				<property name="BackgroundColor" type="integer" value="10397395" />
+				<property name="Border" type="short" value="1" />
+			</component>			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHead"/>
+				<property name="PositionX" type="integer" value="7" />
+				<property name="PositionY" type="integer" value="25" />
+				<property name="Width" type="integer" value="379" />
+				<property name="Height" type="integer" value="8" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="* Name" />
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" />
+				<property name="BackgroundColor" type="integer" value="10397395" />
+			</component>									
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlListBoxModel</class>
+				<property name="Name" type="string" value="lstItems"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="35" />
+				<property name="Width" type="integer" value="381" />
+				<property name="Height" type="integer" value="155" />				
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22" />
+				<property name="TabIndex" type="short" value="3" />
+			</component>
+
+			<!-- END -->						
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnOpen"/>
+				<property name="PositionX" type="integer" value="301" />
+				<property name="PositionY" type="integer" value="194" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />
+				<property name="Align" type="short" value="1" />
+				<property name="TabIndex" type="short" value="4" />
+				<property name="Label" type="string" value="Open" />
+			</component>
+																
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnCancel"/>
+				<property name="PositionX" type="integer" value="345" />
+				<property name="PositionY" type="integer" value="194" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />				
+				<property name="TabIndex" type="short" value="5" />
+				<property name="PushButtonType" type="short" value="2" />
+				<property name="Label" type="string" value="Cancel" />
+			</component>
+			
+		</components>
+		
+	</dialog>
+	
+
+	<dialog>
+		<name>_SettingsDialog</name>
+
+		<properties>
+				<property name="Width" type="integer" value="175" />
+				<property name="Height" type="integer" value="205" />
+				<property name="Title" type="string" value="Settings" />
+		</properties>				
+				
+		<components>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="PositionX" type="integer" value="10" />
+				<property name="PositionY" type="integer" value="15" />
+				<property name="Width" type="integer" value="70" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Name" type="string" value="lblServerName"/>
+				<property name="Label" type="string" value="Server Settings:" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="PositionX" type="integer" value="18" />
+				<property name="PositionY" type="integer" value="32" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Name" type="string" value="lblHostName"/>
+				<property name="Label" type="string" value="Host:" />
+				<property name="Align" type="short" value="0" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblPortName"/>				
+				<property name="PositionX" type="integer" value="18" />
+				<property name="PositionY" type="integer" value="52" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="Port:" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblPathName"/>				
+				<property name="PositionX" type="integer" value="18" />
+				<property name="PositionY" type="integer" value="72" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="Path:" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblRepositoryName"/>				
+				<property name="PositionX" type="integer" value="18" />
+				<property name="PositionY" type="integer" value="92" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="Repository:" />
+			</component>			
+			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblWorkspaceName"/>				
+				<property name="PositionX" type="integer" value="18" />
+				<property name="PositionY" type="integer" value="112" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="WorkSpace:" />
+			</component>			
+						
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblUserName"/>				
+				<property name="PositionX" type="integer" value="18" />
+				<property name="PositionY" type="integer" value="132" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="User:" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblPassword"/>				
+				<property name="PositionX" type="integer" value="18" />
+				<property name="PositionY" type="integer" value="152" />
+				<property name="Width" type="integer" value="30" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="Password:" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtServerName"/>				
+				<property name="PositionX" type="integer" value="50" />
+				<property name="PositionY" type="integer" value="30" />
+				<property name="Width" type="integer" value="110" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="MultiLine" type="boolean" value="false" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtPort"/>				
+				<property name="PositionX" type="integer" value="50" />
+				<property name="PositionY" type="integer" value="50" />
+				<property name="Width" type="integer" value="110" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="MultiLine" type="boolean" value="false" />
+			</component>
+						
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtServlet"/>				
+				<property name="PositionX" type="integer" value="50" />
+				<property name="PositionY" type="integer" value="70" />
+				<property name="Width" type="integer" value="110" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="MultiLine" type="boolean" value="false" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtRepository"/>				
+				<property name="PositionX" type="integer" value="50" />
+				<property name="PositionY" type="integer" value="90" />
+				<property name="Width" type="integer" value="110" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="MultiLine" type="boolean" value="false" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtWorkSpace"/>				
+				<property name="PositionX" type="integer" value="50" />
+				<property name="PositionY" type="integer" value="110" />
+				<property name="Width" type="integer" value="110" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="MultiLine" type="boolean" value="false" />
+			</component>
+						
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtUserName"/>				
+				<property name="PositionX" type="integer" value="50" />
+				<property name="PositionY" type="integer" value="130" />
+				<property name="Width" type="integer" value="110" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="MultiLine" type="boolean" value="false" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtPassword"/>				
+				<property name="PositionX" type="integer" value="50" />
+				<property name="PositionY" type="integer" value="150" />
+				<property name="Width" type="integer" value="110" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />				
+				<property name="TabIndex" type="short" value="0" />
+				<property name="MultiLine" type="boolean" value="false" />
+				<property name="EchoChar" type="short" value="42" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnTest"/>
+				<property name="PositionX" type="integer" value="17" />
+				<property name="PositionY" type="integer" value="174" />
+				<property name="Width" type="integer" value="50" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="4" />				
+				<property name="Label" type="string" value="Test Connection" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnSave"/>
+				<property name="PositionX" type="integer" value="71" />
+				<property name="PositionY" type="integer" value="174" />
+				<property name="Width" type="integer" value="43" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="4" />				
+				<property name="Label" type="string" value="Save" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnCancel"/>
+				<property name="PositionX" type="integer" value="118" />
+				<property name="PositionY" type="integer" value="174" />
+				<property name="Width" type="integer" value="42" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="4" />
+				<property name="Label" type="string" value="Cancel" />
+				<property name="PushButtonType" type="short" value="2" />
+			</component>			
+						
+		</components>
+
+	</dialog>
+	
+	<dialog>
+		<name>_ViewVersionsDialog</name>
+		
+		<properties>
+				<property name="Width" type="integer" value="242" />
+				<property name="Height" type="integer" value="180" />
+				<property name="Title" type="string" value="Open a previous version" />
+		</properties>
+		
+		<components>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblVersionName"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="6" />
+				<property name="Width" type="integer" value="70" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="Versions:" />
+				<!-- property name="FontDescriptor" type="fontdescriptor" value="Courier New:22" / -->
+			</component>			
+
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlImageControlModel</class>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="18" />
+				<property name="Width" type="integer" value="230" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Name" type="string" value="imgHead"/>				
+				<property name="ImageURL" type="image" value="tablesmall.png" />
+			</component -->			
+
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHeadBack"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="18" />
+				<property name="Width" type="integer" value="230" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="" />
+				<!-- property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" / -->
+				<property name="BackgroundColor" type="integer" value="10397395" />
+				<property name="Border" type="short" value="1" />
+			</component>			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblTableHead"/>
+				<property name="PositionX" type="integer" value="7" />
+				<property name="PositionY" type="integer" value="20" />
+				<property name="Width" type="integer" value="228" />
+				<property name="Height" type="integer" value="8" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="* Name" />
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:3" />
+				<property name="BackgroundColor" type="integer" value="10397395" />
+			</component>									
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnFileName"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="18" />
+				<property name="Width" type="integer" value="50" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Name" />
+			</component>			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnFileSize"/>
+				<property name="PositionX" type="integer" value="55" />
+				<property name="PositionY" type="integer" value="18" />
+				<property name="Width" type="integer" value="35" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Size" />
+			</component>			
+
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnCreated"/>
+				<property name="PositionX" type="integer" value="89" />
+				<property name="PositionY" type="integer" value="18" />
+				<property name="Width" type="integer" value="75" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Created" />
+			</component>			
+						
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnOwner"/>
+				<property name="PositionX" type="integer" value="163" />
+				<property name="PositionY" type="integer" value="18" />
+				<property name="Width" type="integer" value="73" />
+				<property name="Height" type="integer" value="13" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="99" />
+				<property name="Label" type="string" value=" Owner" />
+			</component -->			
+												
+			<component>
+				<class>com.sun.star.awt.UnoControlListBoxModel</class>
+				<property name="Name" type="string" value="lstVersions"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="30" />
+				<property name="Width" type="integer" value="230" />
+				<property name="Height" type="integer" value="120" />
+				<property name="TabIndex" type="short" value="3" />
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22" />
+			</component>			
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblComment"/>
+				<property name="PositionX" type="integer" value="10" />
+				<property name="PositionY" type="integer" value="165" />
+				<property name="Width" type="integer" value="70" />
+				<property name="Height" type="integer" value="10" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="Comment:" />
+			</component -->
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlEditModel</class>
+				<property name="Name" type="string" value="edtComment"/>
+				<property name="PositionX" type="integer" value="15" />
+				<property name="PositionY" type="integer" value="180" />
+				<property name="Width" type="integer" value="230" />
+				<property name="Height" type="integer" value="60" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="3" />
+				<property name="MultiLine" type="boolean" value="true" />
+				<property name="Text" type="string" value="Not available yet..." />
+			</component -->
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnOpen"/>
+				<property name="PositionX" type="integer" value="130" />
+				<property name="PositionY" type="integer" value="160" />
+				<property name="Width" type="integer" value="50" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="6" />
+				<property name="Label" type="string" value="Open" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnCancel"/>
+				<property name="PositionX" type="integer" value="186" />
+				<property name="PositionY" type="integer" value="160" />
+				<property name="Width" type="integer" value="50" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="7" />
+				<property name="Label" type="string" value="Cancel" />
+				<property name="PushButtonType" type="short" value="2" />
+			</component>
+			
+			<!-- component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="Name" type="string" value="btnCompare"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="160" />
+				<property name="Width" type="integer" value="80" />
+				<property name="Height" type="integer" value="14" />
+				<property name="TabIndex" type="short" value="4" />
+				<property name="Label" type="string" value="Compare with this version" />
+			</component -->
+			
+		</components>
+		
+	</dialog>
+			
+	<dialog>
+		<name>_AboutDialog</name>
+
+		<properties>
+				<property name="Width" type="integer" value="126" />
+				<property name="Height" type="integer" value="120" />
+				<property name="BackgroundColor" type="integer" value="16777215" />
+				<property name="Title" type="string" value="eXo-Platform Open Office Add-On" />
+		</properties>				
+				
+		<components>			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblInfo1"/>
+				<property name="PositionX" type="integer" value="6" />
+				<property name="PositionY" type="integer" value="10" />
+				<property name="Width" type="integer" value="150" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="JCR Storage Addon for Open Office" />
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:2" />
+			</component>
+
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblInfo11"/>
+				<property name="PositionX" type="integer" value="37" />
+				<property name="PositionY" type="integer" value="20" />
+				<property name="Width" type="integer" value="150" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="eXo JCR 1.7" />
+				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:2" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlImageControlModel</class>
+				<property name="PositionX" type="integer" value="20" />
+				<property name="PositionY" type="integer" value="33" />
+				<property name="Width" type="integer" value="86" />
+				<property name="Height" type="integer" value="43" />
+				<property name="Name" type="string" value="imgLogo"/>				
+				<property name="TabIndex" type="short" value="6" />
+				<property name="ImageURL" type="image" value="exo.png" />
+			</component>			
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlFixedTextModel</class>
+				<property name="Name" type="string" value="lblInfo2"/>
+				<property name="PositionX" type="integer" value="47" />
+				<property name="PositionY" type="integer" value="84" />
+				<property name="Width" type="integer" value="150" />
+				<property name="Height" type="integer" value="12" />
+				<property name="Align" type="short" value="0" />
+				<property name="TabIndex" type="short" value="0" />
+				<property name="Label" type="string" value="Build 5.11.07" />
+			</component>
+			
+			<component>
+				<class>com.sun.star.awt.UnoControlButtonModel</class>
+				<property name="PositionX" type="integer" value="42" />
+				<property name="PositionY" type="integer" value="99" />
+				<property name="Width" type="integer" value="43" />
+				<property name="Height" type="integer" value="15" />
+				<property name="Name" type="string" value="btnCancel"/>				
+				<property name="TabIndex" type="short" value="5" />
+				<property name="PushButtonType" type="short" value="2" />
+				<property name="Label" type="string" value="Ok" />
+			</component>			
+		</components>
+		
+	</dialog>
+		
+			
+</dialogconfig>

@@ -53,9 +53,17 @@
 
       <dependency>
          <groupId>org.exoplatform.kernel</groupId>
+         <artifactId>exo.kernel.component.common</artifactId>
+         <version>${org.exoplatform.kernel.version}</version>
+         <scope>compile</scope>
+      </dependency>
+
+      <dependency>
+         <groupId>org.exoplatform.kernel</groupId>
          <artifactId>exo.kernel.container</artifactId>
          <scope>compile</scope>
       </dependency>
+
       <dependency>
          <groupId>org.exoplatform.ws</groupId>
          <artifactId>exo.ws.rest.ext</artifactId>
@@ -107,60 +115,73 @@
             </includes>
          </resource>
       </resources>
-
-      <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <executions>
-               <execution>
-                  <phase>compile</phase>
-                  <goals>
-                     <goal>jar</goal>
-                  </goals>
-               </execution>
-            </executions>
-            <configuration>
-               <archive>
-                  <manifest>
-                     <addClasspath>true</addClasspath>
-                  </manifest>
-                  <manifestEntries>
-                     <RegistrationClassName>org.exoplatform.applications.ooplugin.AddonHandler</RegistrationClassName>
-                     <Sealed>true</Sealed>
-                  </manifestEntries>
-               </archive>
-            </configuration>
-         </plugin>
-
-         <plugin>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <version>2.1</version>
-            <executions>
-               <execution>
-                  <phase>package</phase>
-                  <goals>
-                     <goal>single</goal>
-                  </goals>
-               </execution>
-            </executions>
-
-            <configuration>
-               <archive>
-                  <manifest />
-               </archive>
-
-               <descriptor>zip-assembly.xml</descriptor>
-
-               <finalName>exo-oo-addon</finalName>
-
-               <outputDirectory>bin</outputDirectory>
-               <workDirectory>target/assembly/work</workDirectory>
-            </configuration>
-         </plugin>
-
-
-      </plugins>
    </build>
+
+   <profiles>
+      <profile>
+         <id>deploy</id>
+         <activation>
+            <activeByDefault>true</activeByDefault>
+         </activation>
+         <build>
+            <resources>
+               <resource>
+                  <directory>src/main/java</directory>
+                  <includes>
+                     <include>**/*.xml</include>
+                  </includes>
+               </resource>
+            </resources>
+            <plugins>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-jar-plugin</artifactId>
+                  <executions>
+                     <execution>
+                        <phase>compile</phase>
+                        <goals>
+                           <goal>jar</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+                  <configuration>
+                     <archive>
+                        <manifest>
+                           <addClasspath>true</addClasspath>
+                        </manifest>
+                        <manifestEntries>
+                           <RegistrationClassName>org.exoplatform.applications.ooplugin.AddonHandler</RegistrationClassName>
+                           <Sealed>true</Sealed>
+                        </manifestEntries>
+                     </archive>
+                  </configuration>
+               </plugin>
+               <plugin>
+                  <artifactId>maven-assembly-plugin</artifactId>
+                  <version>2.1</version>
+                  <executions>
+                     <execution>
+                        <phase>install</phase>
+                        <goals>
+                           <goal>assembly</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+                  <configuration>
+                     <archive>
+                        <manifest />
+                     </archive>
+                     <descriptors>
+                     <descriptor>zip-assembly.xml</descriptor>
+                     </descriptors>
+                     <finalName>exo-oo-addon</finalName>
+                     <outputDirectory>bin</outputDirectory>
+                     <workDirectory>target/assembly/work</workDirectory>
+                  </configuration>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+   </profiles>
 
 </project>

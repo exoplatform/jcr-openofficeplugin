@@ -6,7 +6,6 @@
    </parent>
 
    <modelVersion>4.0.0</modelVersion>
-   <groupId>exo-jcr</groupId>
    <artifactId>exo-jcr.applications.openofficeplugin</artifactId>
    <version>1.12.6-GA</version>
    <packaging>jar</packaging>

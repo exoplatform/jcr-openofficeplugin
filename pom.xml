@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <parent>
-      <groupId>org.exoplatform.jcr</groupId>
-      <artifactId>jcr-parent</artifactId>
-      <version>1.12.7-GA-SNAPSHOT</version>
+     <groupId>org.exoplatform</groupId>
+     <artifactId>exo.parent</artifactId>
+     <version>7</version>
    </parent>
 
    <modelVersion>4.0.0</modelVersion>
@@ -14,11 +14,17 @@
    <url>http://www.exoplatform.org</url>
    <description>eXo JCR Open Office WebDav plugin</description>
 
+  <properties>
+    <org.exoplatform.kernel.version>2.2.7-GA-SNAPSHOT</org.exoplatform.kernel.version>
+    <org.exoplatform.ws.version>2.1.7-GA-SNAPSHOT</org.exoplatform.ws.version>
+  </properties>
+  
    <dependencies>
 
       <dependency>
          <groupId>org.exoplatform.ws</groupId>
          <artifactId>exo.ws.commons</artifactId>
+         <version>${org.exoplatform.ws.version}</version>
          <scope>compile</scope>
          <exclusions>
             <exclusion>
@@ -62,12 +68,14 @@
       <dependency>
          <groupId>org.exoplatform.kernel</groupId>
          <artifactId>exo.kernel.container</artifactId>
+         <version>${org.exoplatform.kernel.version}</version>
          <scope>compile</scope>
       </dependency>
 
       <dependency>
          <groupId>org.exoplatform.ws</groupId>
          <artifactId>exo.ws.rest.ext</artifactId>
+         <version>${org.exoplatform.ws.version}</version>
          <scope>compile</scope>
       </dependency>
 
@@ -102,6 +110,7 @@
       <dependency>
          <groupId>javax.ws.rs</groupId>
          <artifactId>jsr311-api</artifactId>
+         <version>1.0</version>
          <scope>compile</scope>
       </dependency>
 

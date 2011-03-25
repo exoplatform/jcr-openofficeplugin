@@ -17,20 +17,6 @@
 
 package org.exoplatform.applications.ooplugin;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.util.ArrayList;
-
-import org.exoplatform.applications.ooplugin.dialog.DialogBuilder;
-import org.exoplatform.applications.ooplugin.dialog.EventHandler;
-import org.exoplatform.applications.ooplugin.utils.TextUtils;
-import org.exoplatform.applications.ooplugin.utils.WebDavUtils;
-import org.exoplatform.common.http.HTTPStatus;
-import org.exoplatform.common.http.client.HTTPConnection;
-import org.exoplatform.common.http.client.HTTPResponse;
-import org.exoplatform.services.log.ExoLogger;
-import org.exoplatform.services.log.Log;
-
 import com.sun.star.awt.Rectangle;
 import com.sun.star.awt.VclWindowPeerAttribute;
 import com.sun.star.awt.WindowAttribute;
@@ -45,6 +31,20 @@ import com.sun.star.frame.XFrame;
 import com.sun.star.lang.XComponent;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
+
+import org.exoplatform.applications.ooplugin.dialog.DialogBuilder;
+import org.exoplatform.applications.ooplugin.dialog.EventHandler;
+import org.exoplatform.applications.ooplugin.utils.TextUtils;
+import org.exoplatform.applications.ooplugin.utils.WebDavUtils;
+import org.exoplatform.common.http.HTTPStatus;
+import org.exoplatform.common.http.client.HTTPConnection;
+import org.exoplatform.common.http.client.HTTPResponse;
+import org.exoplatform.services.log.ExoLogger;
+import org.exoplatform.services.log.Log;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
 
 /**
  * Created by The eXo Platform SAS Author.
@@ -207,7 +207,7 @@ public class PlugInDialog
       }
 
       HTTPConnection connection = WebDavUtils.getAuthConnection(config);
-      HTTPResponse response = connection.Get(href);
+      HTTPResponse response = connection.Get(TextUtils.Escape(href, '%', true));
 
       int status = response.getStatusCode();
 

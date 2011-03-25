@@ -978,7 +978,7 @@
 				<property name="Height" type="integer" value="12" />
 				<property name="Align" type="short" value="0" />
 				<property name="TabIndex" type="short" value="0" />
-				<property name="Label" type="string" value="eXo JCR 1.7" />
+				<property name="Label" type="string" value="eXo JCR 1.14" />
 				<property name="FontDescriptor" type="fontdescriptor" value="Courier New:22:2" />
 			</component>
 			

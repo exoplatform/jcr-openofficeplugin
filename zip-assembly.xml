@@ -67,6 +67,24 @@
             <exclude>org.exoplatform.tool:exo.tool.framework.junit</exclude>
             <exclude>javax.portlet:portlet-api</exclude>
             <exclude>javax.faces:jsf-api</exclude>
+            
+            <exclude>org.ow2.carol:carol-interceptors</exclude>
+            <exclude>commons-io:commons-io</exclude>
+            <exclude>commons-logging:commons-logging-api</exclude>
+            <exclude>org.exoplatform.core:exo.core.component.script.groovy</exclude>
+            <exclude>org.codehaus.groovy:groovy-all</exclude>
+            <exclude>org.ow2.carol.irmi:irmi</exclude>
+            <exclude>org.jacorb:jacorb</exclude>
+            <exclude>org.jacorb:jacorb-idl</exclude>
+            <exclude>javax.inject:javax.inject</exclude>
+            <exclude>org.jgroups:jgroups</exclude>
+            <exclude>net.sf.jtidy:jtidy</exclude>
+            <exclude>org.ow2.spec.ee:ow2-jta-1.1-spec</exclude>
+            <exclude>org.quartz-scheduler:quartz</exclude>
+            <exclude>org.ow2.jotm:jotm-core</exclude>
+            <exclude>org.objectweb.carol:carol</exclude>
+            <exclude>javax.resource:connector</exclude>
+            <exclude>org.objectweb.howl:howl</exclude>
          </excludes>
       </dependencySet>
    </dependencySets>

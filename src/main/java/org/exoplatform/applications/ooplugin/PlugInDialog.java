@@ -207,7 +207,7 @@ public class PlugInDialog
       }
 
       HTTPConnection connection = WebDavUtils.getAuthConnection(config);
-      HTTPResponse response = connection.Get(TextUtils.Escape(href, '%', true));
+      HTTPResponse response = connection.Get(href);
 
       int status = response.getStatusCode();
 

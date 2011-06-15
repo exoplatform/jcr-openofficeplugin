@@ -7,7 +7,7 @@
 
    <modelVersion>4.0.0</modelVersion>
    <artifactId>exo-jcr.applications.openofficeplugin</artifactId>
-   <version>1.12.9-GA-SNAPSHOT</version>
+   <version>1.12.9-GA</version>
    <packaging>jar</packaging>
    <name>eXo JCR :: Open Office WebDav plugin</name>
    <url>http://www.exoplatform.org</url>
@@ -194,8 +194,8 @@
    </profiles>
 
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/branches/1.12.x</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/branches/1.12.x</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/jcr-clients/openofficeplugin/branches/1.12.x</url>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/tags/1.12.9-GA</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/tags/1.12.9-GA</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/jcr-clients/openofficeplugin/tags/1.12.9-GA</url>
   </scm>
 </project>

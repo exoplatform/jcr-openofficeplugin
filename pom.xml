@@ -15,7 +15,7 @@
 
   <properties>
     <org.exoplatform.kernel.version>2.2.12-GA</org.exoplatform.kernel.version>
-    <org.exoplatform.ws.version>2.1.12-GA</org.exoplatform.ws.version>
+    <org.exoplatform.ws.version>2.1.13-GA-SNAPSHOT</org.exoplatform.ws.version>
   </properties>
   
    <dependencies>

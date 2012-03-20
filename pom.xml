@@ -201,8 +201,8 @@
    </profiles>
 
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/trunk</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/trunk</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/jcr-clients/openofficeplugin/trunk</url>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/branches/1.14.x</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/branches/1.14.x</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/jcr-clients/openofficeplugin/branches/1.14.x</url>
   </scm>
 </project>

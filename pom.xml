@@ -10,7 +10,7 @@
    <version>1.15.0-Beta01-SNAPSHOT</version>
    <packaging>jar</packaging>
    <name>eXo JCR :: Open Office WebDav plugin</name>
-   <url>http://www.exoplatform.org</url>
+   <url>http://fisheye.exoplatform.org/browse/projects/cd</url>
    <description>eXo JCR Open Office WebDav plugin</description>
 
   <properties>
@@ -201,8 +201,8 @@
    </profiles>
 
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/trunk</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/jcr-clients/openofficeplugin/trunk</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/jcr-clients/openofficeplugin/trunk</url>
+    <connection>scm:git:ssh://github.com/exodev/jcr-openofficeplugin.git</connection>
+    <developerConnection>scm:git:ssh://github.com/exodev/jcr-openofficeplugin.git</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/cd</url>
   </scm>
 </project>

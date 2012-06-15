@@ -20,45 +20,22 @@
          <excludes>
             <exclude>commons-collections:commons-collections</exclude>
             <exclude>javax.transaction:jta</exclude>
-            <exclude>commons-lang:commons-lang</exclude>
             <exclude>commons-fileupload:commons-fileupload</exclude> 
             <exclude>javax.xml.bind:jaxb-api</exclude> 
-            <exclude>javax.xml.bind:jaxb-extras</exclude> 
             <exclude>javax.annotation:jsr250-api</exclude>
             <exclude>javax.ws.rs:jsr311-api</exclude>
-            <exclude>jtidy:jtidy</exclude>
             <exclude>logkit:logkit</exclude>
             <exclude>org.slf4j:slf4j-api</exclude>
             <exclude>avalon-framework:avalon-framework</exclude>
-            <exclude>bcel:bcel</exclude>
-            <exclude>mail:mail</exclude>
-            <exclude>jsf:jsf-api</exclude>
-            <exclude>jibx:jibx-bind</exclude>
             <exclude>javax.portlet:portlet-api</exclude>
-            <exclude>drools:drools-java</exclude>
-            <exclude>drools:drools-core</exclude>
             <exclude>quartz:quartz</exclude>
-            <exclude>exo-platform:exo-platform.container</exclude>
-            <exclude>mail:activation</exclude>
             <exclude>picocontainer:picocontainer</exclude>
-            <exclude>mysql:mysql-connector-java</exclude>
-            <exclude>groovy:groovy-all-1.0-jsr</exclude>
             <exclude>xpp3:xpp3</exclude>
-            <exclude>exo-platform:exo-platform.commons</exclude>
-            <exclude>jibx:jibx-run</exclude>
-            <exclude>org.jibx:jibx-extras</exclude>
-            <exclude>drools:drools-base</exclude>
-            <exclude>drools:drools-smf</exclude>
             <exclude>javax.servlet:servlet-api</exclude>
-            <exclude>janino:janino</exclude>
-            <exclude>antlr:antlr</exclude>
             <exclude>xstream:xstream</exclude>
             <exclude>junit:junit</exclude>
-            <exclude>drools:drools-smftest</exclude>
-            <exclude>exo-platform:exo-platform.test.framework</exclude>
             <exclude>jmock:jmock</exclude>
             <exclude>commons-beanutils:commons-beanutils</exclude>
-            <exclude>xerces:xercesImpl</exclude>
             <exclude>com.sun.star:beans</exclude>
             <exclude>com.sun.star:unoil</exclude>
             <exclude>com.sun.star:comp</exclude>
@@ -69,7 +46,6 @@
             <exclude>javax.faces:jsf-api</exclude>
             
             <exclude>org.ow2.carol:carol-interceptors</exclude>
-            <exclude>commons-io:commons-io</exclude>
             <exclude>commons-logging:commons-logging-api</exclude>
             <exclude>org.exoplatform.core:exo.core.component.script.groovy</exclude>
             <exclude>org.codehaus.groovy:groovy-all</exclude>
@@ -80,7 +56,6 @@
             <exclude>org.jgroups:jgroups</exclude>
             <exclude>net.sf.jtidy:jtidy</exclude>
             <exclude>org.ow2.spec.ee:ow2-jta-1.1-spec</exclude>
-            <exclude>org.quartz-scheduler:quartz</exclude>
             <exclude>org.ow2.jotm:jotm-core</exclude>
             <exclude>org.objectweb.carol:carol</exclude>
             <exclude>javax.resource:connector</exclude>

@@ -204,7 +204,7 @@
 
   <scm>
     <connection>scm:git:git://github.com/exoplatform/jcr-openofficeplugin.git</connection>
-    <developerConnection>scm:git:git@github.com/exoplatform/jcr-openofficeplugin.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:exoplatform/jcr-openofficeplugin.git</developerConnection>
     <url>http://fisheye.exoplatform.org/browse/projects/webdav-clients</url>
   </scm>
 </project>

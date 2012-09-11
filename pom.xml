@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-   <parent>
-     <groupId>org.exoplatform</groupId>
-     <artifactId>exo.parent</artifactId>
-     <version>7.1</version>
-   </parent>
+  <parent>
+    <groupId>org.exoplatform</groupId>
+    <artifactId>foundation-parent</artifactId>
+    <version>10</version>
+  </parent>
 
    <modelVersion>4.0.0</modelVersion>
    <artifactId>exo-jcr.applications.openofficeplugin</artifactId>
@@ -14,8 +14,8 @@
    <description>eXo JCR Open Office WebDav plugin</description>
 
   <properties>
-    <org.exoplatform.kernel.version>2.4.0-Beta01-SNAPSHOT</org.exoplatform.kernel.version>
-    <org.exoplatform.ws.version>2.3.0-Beta01-SNAPSHOT</org.exoplatform.ws.version>
+    <org.exoplatform.kernel.version>2.4.0-Beta01</org.exoplatform.kernel.version>
+    <org.exoplatform.ws.version>2.3.0-Beta01</org.exoplatform.ws.version>
 
     <version.release.plugin>2.2.1</version.release.plugin>
     <version.buildnumber.plugin>1.0</version.buildnumber.plugin>
@@ -204,7 +204,7 @@
 
   <scm>
     <connection>scm:git:git://github.com/exoplatform/jcr-openofficeplugin.git</connection>
-    <developerConnection>scm:git:git@github.com/exoplatform/jcr-openofficeplugin.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:exoplatform/jcr-openofficeplugin.git</developerConnection>
     <url>https://fisheye.exoplatform.org/browse/jcr-openofficeplugin-dev</url>
   </scm>
 </project>

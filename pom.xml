@@ -25,6 +25,7 @@
     <groupId>org.exoplatform</groupId>
     <artifactId>foundation-parent</artifactId>
     <version>12-SNAPSHOT</version>
+    <relativePath/>
   </parent>
 
    <modelVersion>4.0.0</modelVersion>
@@ -75,7 +76,7 @@
                <artifactId>jotm_jrmp_stubs</artifactId>
             </exclusion>
             <exclusion>
-               <groupId>stax</groupId>
+               <groupId>javax.xml.stream</groupId>
                <artifactId>stax-api</artifactId>
             </exclusion>
          </exclusions>

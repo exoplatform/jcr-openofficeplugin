@@ -3,6 +3,7 @@
      <groupId>org.exoplatform</groupId>
      <artifactId>exo.parent</artifactId>
      <version>7.1</version>
+     <relativePath/>
    </parent>
 
    <modelVersion>4.0.0</modelVersion>

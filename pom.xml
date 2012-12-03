@@ -3,12 +3,12 @@
      <groupId>org.exoplatform</groupId>
      <artifactId>exo.parent</artifactId>
      <version>7.1</version>
-     <relativePath/>
+     <relativePath />
    </parent>
 
    <modelVersion>4.0.0</modelVersion>
    <artifactId>exo-jcr.applications.openofficeplugin</artifactId>
-   <version>1.14.9-GA-SNAPSHOT</version>
+   <version>1.14.9-GA</version>
    <packaging>jar</packaging>
    <name>eXo JCR :: Open Office WebDav plugin</name>
    <url>http://www.exoplatform.org</url>

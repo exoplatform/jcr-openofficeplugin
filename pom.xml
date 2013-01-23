@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+[64;26;25M<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
     Copyright (C) 2009 eXo Platform SAS.
@@ -36,8 +36,8 @@
    <description>Exoplatform SAS 'eXo JCR Open Office WebDav plugin' project.</description>
 
   <properties>
-    <org.exoplatform.kernel.version>2.4.2-GA-SNAPSHOT</org.exoplatform.kernel.version>
-    <org.exoplatform.ws.version>2.3.2-GA-SNAPSHOT</org.exoplatform.ws.version>
+    <org.exoplatform.kernel.version>2.4.2-GA</org.exoplatform.kernel.version>
+    <org.exoplatform.ws.version>2.3.2-GA</org.exoplatform.ws.version>
 
     <version.release.plugin>2.2.1</version.release.plugin>
     <version.buildnumber.plugin>1.0</version.buildnumber.plugin>

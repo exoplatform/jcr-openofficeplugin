@@ -217,7 +217,6 @@
                      <descriptor>zip-assembly.xml</descriptor>
                      </descriptors>
                      <finalName>exo-oo-addon</finalName>
-                     <outputDirectory>bin</outputDirectory>
                      <workDirectory>target/assembly/work</workDirectory>
                   </configuration>
                </plugin>

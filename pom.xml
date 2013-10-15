@@ -8,15 +8,15 @@
 
    <modelVersion>4.0.0</modelVersion>
    <artifactId>exo-jcr.applications.openofficeplugin</artifactId>
-   <version>1.14.11-GA-SNAPSHOT</version>
+   <version>1.14.12-GA-SNAPSHOT</version>
    <packaging>jar</packaging>
    <name>eXo JCR :: Open Office WebDav plugin</name>
    <url>http://www.exoplatform.org</url>
    <description>eXo JCR Open Office WebDav plugin</description>
 
   <properties>
-    <org.exoplatform.kernel.version>2.3.11-GA-SNAPSHOT</org.exoplatform.kernel.version>
-    <org.exoplatform.ws.version>2.2.11-GA-SNAPSHOT</org.exoplatform.ws.version>
+    <org.exoplatform.kernel.version>2.3.12-GA</org.exoplatform.kernel.version>
+    <org.exoplatform.ws.version>2.2.12-GA</org.exoplatform.ws.version>
 
     <version.release.plugin>2.2.1</version.release.plugin>
     <version.buildnumber.plugin>1.0</version.buildnumber.plugin>

@@ -30,7 +30,7 @@
 
    <modelVersion>4.0.0</modelVersion>
    <artifactId>exo-jcr.applications.openofficeplugin</artifactId>
-   <version>1.16.x-SNAPSHOT</version>
+   <version>1.16.2-GA</version>
    <packaging>jar</packaging>
    <name>eXo JCR :: Open Office WebDav plugin</name>
    <description>Exoplatform SAS 'eXo JCR Open Office WebDav plugin' project.</description>
@@ -229,5 +229,6 @@
     <connection>scm:git:git://github.com/exoplatform/jcr-openofficeplugin.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/jcr-openofficeplugin.git</developerConnection>
     <url>https://fisheye.exoplatform.org/browse/jcr-openofficeplugin-dev</url>
+    <tag>1.16.2-GA</tag>
   </scm>
 </project>
